@@ -21,10 +21,15 @@ const SocialMediaButtons = ({ quote, url }) => {
       <EmailShareButton url={url} quote={quote} hashtag="">
         <EmailIcon size={36} round={true} />
       </EmailShareButton>
-      <TwitterShareButton quote={quote} hashtag="">
+      <TwitterShareButton
+        url={url}
+        title={quote.author}
+        via={quote.content}
+        hashtag=""
+      >
         <TwitterIcon size={36} round={true} />
       </TwitterShareButton>
-      <WhatsappShareButton url={url} quote={quote} hashtag="">
+      <WhatsappShareButton url={url} hashtag="">
         <WhatsappIcon size={36} round={true} />
       </WhatsappShareButton>
     </>
