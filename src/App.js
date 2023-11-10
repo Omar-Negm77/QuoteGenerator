@@ -38,7 +38,7 @@ const App = () => {
           </button>
           <button onClick={generateQuote}>Generate Another Quote</button>
         </div>
-        <SocialMediaButtons quote={quote} url={url} />
+        <SocialMediaButtons quote={quote.content} url={url} />
       </div>
     </>
   );
