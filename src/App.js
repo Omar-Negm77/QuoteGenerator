@@ -42,6 +42,8 @@ const App = () => {
           title={quote.author}
           via={quote.content}
           url={url}
+          body={quote.content}
+          separator={quote.content}
         />
       </div>
     </>

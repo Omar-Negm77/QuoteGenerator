@@ -12,21 +12,21 @@ import {
   WhatsappIcon,
 } from "react-share";
 
-const SocialMediaButtons = ({ title, via, url }) => {
+const SocialMediaButtons = ({ quote, title, via, url, body, separator }) => {
   return (
     <>
-      {/* <FacebookShareButton url={url} quote={quote} hashtag="">
+      <FacebookShareButton url={url} quote={quote} hashtag="">
         <FacebookIcon size={36} round={true} />
-      </FacebookShareButton> */}
-      {/* <EmailShareButton url={url} quote={quote} hashtag="">
+      </FacebookShareButton>
+      <EmailShareButton url={url} body={body}>
         <EmailIcon size={36} round={true} />
-      </EmailShareButton> */}
+      </EmailShareButton>
       <TwitterShareButton title={title} via={via} url={url} hashtag="">
         <TwitterIcon size={36} round={true} />
       </TwitterShareButton>
-      {/* <WhatsappShareButton url={url} hashtag="">
+      <WhatsappShareButton title={title} url={url} hashtag="">
         <WhatsappIcon size={36} round={true} />
-      </WhatsappShareButton> */}
+      </WhatsappShareButton>
     </>
   );
 };
